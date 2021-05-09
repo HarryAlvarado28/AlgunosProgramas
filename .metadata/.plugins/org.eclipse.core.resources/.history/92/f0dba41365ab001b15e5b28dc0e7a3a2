@@ -1,0 +1,45 @@
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author harryalvarado28
+ * 
+ * 
+ * 
+ */
+
+class Salario {
+	float salario, deducciones, horas_trabajadas, thora;
+	String empleado = "";
+
+	Salario() {
+		Scanner sc = new Scanner(System.in);
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Introduce el nombre del empleado:");
+		empleado = teclado.nextLine();
+		System.out.println("Introduce horas trabajadas :");
+		horas_trabajadas = sc.nextFloat();
+		System.out.println("Introduce tarifahora $:");
+		thora = sc.nextFloat();
+		System.out.println("Introduce deducciones $:");
+		deducciones = sc.nextFloat();
+	}
+
+	void calcular() {
+		salario = (thora * horas_trabajadas) - deducciones;
+		System.out.println("El Salario del empleado " + empleado + " es $" + salario);
+	}
+
+}
+
+public class CalcularSalario {
+
+	public static void main(String[] args) {
+
+		Salario sc = new Salario();
+		sc.calcular();
+
+	}
+
+}

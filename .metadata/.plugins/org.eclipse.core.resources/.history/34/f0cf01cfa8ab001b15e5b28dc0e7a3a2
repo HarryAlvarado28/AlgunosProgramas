@@ -1,0 +1,15 @@
+class CuadradoCubo {
+	
+	public CuadradoCubo() {
+		System.out.println("---CuadradoCubo---");	
+	}
+	
+}
+public class Prog05CuadradoCubo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CuadradoCubo cuadradoCubo = new CuadradoCubo();
+	}
+
+}

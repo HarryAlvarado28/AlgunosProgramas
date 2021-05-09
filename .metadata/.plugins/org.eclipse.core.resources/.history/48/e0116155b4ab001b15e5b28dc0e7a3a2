@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class Fibonacci {
+	public Fibonacci() {
+		System.out.println("---Fibonacci---");
+		Scanner entrada = new Scanner(System.in);
+		int val, pre = 0, pos = 1;
+		System.out.print("Fabor ingresar el numero de terminos a generar en la serie: ");
+		int n = entrada.nextInt();
+		System.out.print(pre + "\t" + pos);
+		for (int x = 3; x <= n; x++) {
+			val = pre + pos;
+			pre = pos;
+			pos = val;
+			System.out.print("\t" + val);
+		}
+
+	}
+
+}
+
+public class Prog10Fibonacci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Fibonacci fibonacci = new Fibonacci();
+	}
+
+}

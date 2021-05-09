@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+ class Vocal {
+	private String texto;
+	
+	Vocal(){
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Ingrese cualquier cadena: ");
+		this.texto = scanner.next();
+		EsVocal(texto);
+		System.out.println(this.texto);
+	}
+	private void EsVocal(String texto) {
+		String letra;
+		letra = texto.substring(1);// .charAt(0);
+		if (letra.equalsIgnoreCase("A")) {
+			 System.out.println("El primer caracter es una VOCAL");
+		} else {
+			System.out.println("El primer caracter es una CONSONANTE");
+		}
+		 
+	}
+}
+
+public class Prog01VocalConsonante {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vocal vocal = new Vocal();
+		
+	}
+
+}

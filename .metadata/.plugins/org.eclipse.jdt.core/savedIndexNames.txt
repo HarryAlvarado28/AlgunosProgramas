@@ -1,0 +1,10 @@
+INDEX VERSION 1.131+/Users/harry/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+1934358974.index
+3088498083.index
+2632288092.index
+2888586291.index
+1395272171.index
+1471763705.index
+555740185.index
+2178988004.index
+1097058508.index

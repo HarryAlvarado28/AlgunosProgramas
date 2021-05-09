@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+class LongitudCadena{
+	private String cadena;
+	
+	public LongitudCadena(){
+		System.out.println("---CadenasIguales---");
+	}
+	
+	public void leerCadena() {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Ingrese una cadena: ");
+		this.cadena = scanner.next();
+	}
+	
+	public void longitud() {
+		if (cadena.length() < 5) {
+			
+		}else {
+			System.out.println("Su cadena es: "+cadena);
+		}
+	}
+	
+	
+}
+
+
+public class Prog03LongitudCadena {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

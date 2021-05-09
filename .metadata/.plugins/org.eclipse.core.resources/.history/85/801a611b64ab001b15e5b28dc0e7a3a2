@@ -1,0 +1,26 @@
+import java.util.*;
+
+class CalcGrados {
+	double gradosC, gradosF;
+
+	CalcGrados() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Introduce los grados en Centígrados:");
+		gradosC = scanner.nextDouble();
+	}
+
+	void calcular() {
+		gradosF = 32 + (9 * gradosC / 5);
+		System.out.println(gradosC + " ºC = " + gradosF + " ºF");
+	}
+
+}
+
+public class GradosFahren {
+
+	public static void main(String[] args) {
+		CalcGrados fh = new CalcGrados();
+		fh.calcular();
+	}
+
+}

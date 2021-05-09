@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+ class Vocal {
+	private String texto;
+	
+	Vocal(){
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Ingrese cualquier cadena: ");
+		this.texto = scanner.next();
+		System.out.println(this.texto);
+	}
+}
+
+public class Prog01VocalConsonante {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vocal vocal = new Vocal();
+		
+	}
+
+}

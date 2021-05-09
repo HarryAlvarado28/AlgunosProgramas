@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+class Vocales {
+	private int vocalA = 0, vocalE = 0, vocalI = 0, vocalO = 0, vocalU = 0;
+	private String texto;
+
+	public Vocales() {
+		System.out.println("---Vocales---");
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Ingrese una frase a validar:");
+		texto = entrada.nextLine();
+
+	}
+
+	public void validarCadena() {
+		for (int i = 0; i < texto.length(); i++) {
+			switch (Character.toUpperCase(texto.charAt(i))) {
+			case 'A':
+				vocalA++;
+				break;
+			case 'E':
+				vocalE++;
+				break;
+			case 'I':
+				vocalI++;
+				break;
+			case 'O':
+				vocalO++;
+				break;
+			case 'U':
+				vocalU++;
+				break;
+			default:
+				break;
+			}
+		}
+		System.out.println("La vocal A aparece: " + vocalA);
+		System.out.println("La vocal E aparece: " + vocalE);
+		System.out.println("La vocal I aparece: " + vocalI);
+		System.out.println("La vocal O aparece: " + vocalO);
+		System.out.println("La vocal U aparece: " + vocalU);
+	}
+
+}
+
+public class Prog09Vocales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vocales vocales = new Vocales();
+		vocales.validarCadena();
+	}
+
+}
