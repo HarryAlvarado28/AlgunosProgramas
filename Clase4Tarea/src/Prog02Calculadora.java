@@ -10,15 +10,12 @@ import javax.swing.*;
 
 public class Prog02Calculadora {
 
-	private JTextField valor1, valor2, camporesultado, operacion;;
+	private JLabel label1, label2, label3;
 	private JComboBox jcomboBox;
 	private JFrame jframe;
 	private JButton btnRealizar;
-	JLabel label1, label2, label3;
+	private JTextField valor1, valor2, camporesultado, operacion;;
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		new Prog02Calculadora();
 	}

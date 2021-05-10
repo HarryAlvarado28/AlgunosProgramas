@@ -236,3 +236,34 @@ Caused by: java.io.IOException: Source ref refs/heads/master doesn't resolve to 
 
 !ENTRY org.eclipse.egit.ui 4 0 2021-05-09 12:38:56.931
 !MESSAGE Can't connect to any repository: https://github.com/HarryAlvarado28/programacion_01.git (An internal Exception occurred during push: Source ref refs/heads/master doesn't resolve to any object.)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-05-09 12:50:55.227
+!MESSAGE close() called when useCnt is already zero for Repository[/Users/harry/git/repository/.git]
+!SESSION 2021-05-09 19:59:24.968 -----------------------------------------------
+eclipse.buildId=4.19.0.I20210303-1800
+java.version=15.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_PA
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/harry/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data /Users/harry/eclipse-workspace -product org.eclipse.epp.package.java.product -keyring /Users/harry/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2021-05-09 19:59:34.360
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-05-09 19:59:34.360
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1acc873b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4ca970d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)

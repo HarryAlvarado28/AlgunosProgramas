@@ -12,7 +12,6 @@ public class Prog01Calculadora extends JFrame implements ActionListener {
 	JLabel label1, label2;
 
 	public void ControlesCalculadora() {
-
 		Container contenedor = getContentPane();
 		contenedor.setLayout(new FlowLayout());
 		label1 = new JLabel("Numero 1");
